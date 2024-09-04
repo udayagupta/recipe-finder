@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="recipe finder, food, cooking, ingredients, recipes">
+    <meta name="description" content="Discover hundreds of delicious recipes using our Recipe Finder | Search by name, cuisines or type.">
+    <meta name="author" content="Udaya Gupta">
+    
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/recipe.css">
+    <link rel="shortcut icon" href="src/assets/recipe.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Quick Recipes | Hundreds of Recipes, Easy Search</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-heading">
+                <h1 class="main-heading">Quick Recipes <i class="fa-solid fa-burger"></i></h1>
+            </div>
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="navigation-items">
+                <div class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul class="navigation-items-list">
+                    <li class="nav-item active"><a href="#home">Home</a></li>
+                    <li class="nav-item"><a href="./favourites.html">Favourites</a></li>
+                    <li class="nav-item"><a href="./about-us.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="header-section">
+            <div class="header-heading">
+                <h2>Cook What's Best for You <i class="fa-solid fa-utensils"></i></h2>
+            </div>
+            <div>
+                <form>
+                    <label for="search-name"></label>
+                    <input spellcheck="false" type="text" name="search-name" id="search-name" placeholder="Enter the recipe name" required>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="categories">
+            <h3>Categories</h3>
+            <ul class="categories-list">
+                <li class="category" data-category="Vegetarian">
+                    <div class="category-image">
+                        <img src="src/assets/vegetable.png" alt="Veg Category">
+                    </div>
+                    <h4>Veg</h4>
+                </li>
+                <li class="category" data-category="Vegan">
+                    <div class="category-image">
+                        <img src="src/assets/vegan.png" alt="Vegan Category">
+                    </div>
+                    <h4>Vegan</h4>
+                </li>
+                <li class="category" data-category="Seafood">
+                    <div class="category-image">
+                        <img src="src/assets/sea-food.png" alt="Seafood Category">
+                    </div>
+                    <h4>Seafood</h4>
+                </li>
+                <li class="category" data-category="Dessert">
+                    <div class="category-image">
+                        <img src="src/assets/sweets.png" alt="Dessert Category">
+                    </div>
+                    <h4>Dessert</h4>
+                </li>
+                <li class="category" data-category="Breakfast">
+                    <div class="category-image">
+                        <img src="src/assets/breakfast.png" alt="Breakfast Category">
+                    </div>
+                    <h4>Breakfast</h4>
+                </li>
+                <li class="category" data-category="Beef">
+                    <div class="category-image">
+                        <img src="src/assets/meat.png" alt="Meat Category">
+                    </div>
+                    <h4>Beef</h4>
+                </li>
+                <li class="category" data-category="Pasta">
+                    <div class="category-image">
+                        <img src="src/assets/pasta.png" alt="Pasta Category">
+                    </div>
+                    <h4>Pasta</h4>
+                </li>
+            </ul>
+        </section>
+        <section class="recipes">
+            <ul class="recipe-list"></ul>
+        </section>
+        <div class="image-modal">
+            <span onclick="close">&times;</span>
+            <img src="" alt="">
+        </div>
+    </main>
+    <script type="module" src="src/js/recipeRender.js"></script>
+    <script type="module" src="src/js/script.js"></script>
+</body>
+</html>

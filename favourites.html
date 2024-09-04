@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favouties | Quick Recipes</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/favourites/favourites.css">
+    <link rel="shortcut icon" href="src/assets/recipe.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/recipe.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-heading">
+                <h1 class="main-heading">Quick Recipes <i class="fa-solid fa-burger"></i></h1>
+            </div>
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="navigation-items">
+                <div class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul class="navigation-items-list">
+                    <li class="nav-item "><a href="./index.html">Home</a></li>
+                    <li class="nav-item active"><a href="#favourites">Favourites</a></li>
+                    <li class="nav-item"><a href="./about-us.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Your Favourite Recipes</h2>
+        </section>
+        <section class="fav-recipes">
+            <ul class="fav-recipes-list"></ul>
+        </section>
+    </main>
+    <script type="module" src="src/js/script.js"></script>
+    <script type="module" src="./src/js/favourites.js"></script>
+</body>
+</html>

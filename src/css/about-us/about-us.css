@@ -1,0 +1,23 @@
+/* header {
+    height: 70px;
+} */
+
+h2 {
+    font-size: 2.2rem;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.about-us-link {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
